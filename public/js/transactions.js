@@ -1,8 +1,6 @@
 const myModal = new bootstrap.Modal("#transaction-modal");
 let logged = sessionStorage.getItem("logged");
 const session = localStorage.getItem("session");
-//let cashIn = [];
-//let casOut = [];
 
 let data = {
     transactions: []
@@ -97,5 +95,5 @@ function getTransactions() {
      })
    }
 
-   document.getElementById("transaction-list").innerHTML = transactionsHtml;
+   document.getElementById("transactions-list").innerHTML = transactionsHtml;
 }
